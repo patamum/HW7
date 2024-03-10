@@ -16,24 +16,24 @@
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите длины строн первого треугольника");
+            Console.WriteLine("Введите длины сторон первого треугольника");
             double x1 = Convert.ToDouble(Console.ReadLine());
             double x2 = Convert.ToDouble(Console.ReadLine());
             double x3 = Convert.ToDouble(Console.ReadLine());
             if (!IsTriangle(x1, x2, x3))
             {
-                Console.WriteLine("Треугольник со стронами {0}, {1}, {2} не существует", x1, x2, x3);
+                Console.WriteLine("Треугольник со сторонами {0}, {1}, {2} не существует", x1, x2, x3);
                 return;
             }
             double s1 = GetSquare(x1, x2, x3);
             
-            Console.WriteLine("Введите длины строн второго треугольника");
+            Console.WriteLine("Введите длины сторон второго треугольника");
             double y1 = Convert.ToDouble(Console.ReadLine());
             double y2 = Convert.ToDouble(Console.ReadLine());
             double y3 = Convert.ToDouble(Console.ReadLine());
             if (!IsTriangle(y1, y2, y3))
             {
-                Console.WriteLine("Треугольник со стронами {0}, {1}, {2} не существует", y1, y2, y3);
+                Console.WriteLine("Треугольник со сторонами {0}, {1}, {2} не существует", y1, y2, y3);
                 return;
             }
             double s2 = GetSquare(y1, y2, y3);
